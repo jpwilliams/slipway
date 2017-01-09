@@ -30,7 +30,8 @@
     "docs"
   ],
   "bin": {
-    "slipway": "./scripts/process.js"
+    "slipway": "./scripts/process.js",
+    "slipway-release": "./bin/release.js"
   },
   "engines": {
     "node": ">= 7.0.0"

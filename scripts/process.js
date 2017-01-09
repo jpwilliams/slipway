@@ -23,7 +23,7 @@ proc.on('exit', (code) => {
     return
   }
 
-  childProcess.spawn('./bin/release.js', [], {
+  childProcess.spawn('./node_modules/.bin/slipway-release', [], {
     stdio: 'inherit'
   })
 })
