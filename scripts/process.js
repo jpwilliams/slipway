@@ -1,6 +1,3 @@
-// "release": "./node_modules/.bin/releasy --stable",
-//     "release": "./node_modules/release/scripts/process.js"
-
 var childProcess = require('child_process')
 var argv = process.argv
 var type = argv[2] || 'patch'
