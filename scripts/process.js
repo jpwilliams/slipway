@@ -1,3 +1,7 @@
+#!/bin/bash
+// >&/dev/null;exec node --harmony-async-await $0 $@
+// vi:syntax=javascript
+
 var childProcess = require('child_process')
 var argv = require('optimist').argv
 var type = argv._[0] || 'patch'
