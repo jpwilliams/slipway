@@ -3,28 +3,38 @@
   "version": "0.0.0",
   "description": "Release your projects with the finesse of an oil tanker.",
   "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
     "preinstall": "bin/preinstall.js"
   },
   "files": [
     "bin",
     "lib"
   ],
-  "repository": "jpwilliams/slipway",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jpwilliams/slipway.git"
+  },
   "keywords": [
+    "release",
+    "releaser",
+    "releasy",
+    "ship",
+    "deploy",
     "github",
     "releases",
-    "cli",
-    "tags",
-    "push"
+    "changelog",
+    "notes",
+    "generate",
+    "docs"
   ],
-  "author": "Jack Williams <jack@wildfire.gg>",
-  "license": "MIT",
   "bin": {
     "release": "./bin/release.js"
   },
   "engines": {
     "node": ">= 7.0.0"
   },
+  "author": "Jack Williams <jack@wildfire.gg>",
+  "license": "MIT",
   "bugs": {
     "url": "https://github.com/jpwilliams/slipway/issues"
   },
