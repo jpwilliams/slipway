@@ -28,7 +28,7 @@
     "docs"
   ],
   "bin": {
-    "release": "./bin/release.js"
+    "slipway": "./scripts/process.js"
   },
   "engines": {
     "node": ">= 7.0.0"
