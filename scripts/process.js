@@ -1,6 +1,6 @@
 var childProcess = require('child_process')
-var argv = process.argv
-var type = argv[2] || 'patch'
+var argv = require('optimist').argv
+var type = argv._[0] || 'patch'
 
 if (['patch', 'minor', 'major'].indexOf(type) < 0) {
   console.error('Must provide either "major", "minor" or "patch" when releasing!')
