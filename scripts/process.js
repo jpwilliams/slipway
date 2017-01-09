@@ -1,7 +1,6 @@
 var childProcess = require('child_process')
 var argv = require('optimist').argv
 var type = argv._[0] || 'patch'
-var releaseDir = argv.releaseDir || './node_modules/.bin/release'
 
 if (['patch', 'minor', 'major'].indexOf(type) < 0) {
   console.error('Must provide either "major", "minor" or "patch" when releasing!')
@@ -20,7 +19,7 @@ proc.on('exit', (code) => {
     return
   }
 
-  childProcess.spawn(releaseDir, [], {
+  childProcess.spawn('./bin/release.js', [], {
     stdio: 'inherit'
   })
 })
