@@ -1,6 +1,6 @@
 {
   "name": "slipway",
-  "version": "0.1.4",
+  "version": "0.1.5",
   "description": "Release your projects with the finesse of an oil tanker.",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
